@@ -1,0 +1,40 @@
+@import "~@/style/normalize.css";
+
+:root {
+  --color-site: #397DFF;
+  --color-gray: #2b2d3ab3;
+  --color-container: #EBEEF5;
+
+
+  --transition-normal: 0.3s;
+}
+
+.landing {
+  background-color: var(--color-container);
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menu {
+  &-nav {
+    // display: flex;
+    ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      padding-left: 0;
+      a {
+        text-decoration: none;
+        color: var(--color-gray);
+        transition-duration: --transition-normal;
+        &:hover {
+          color: var(--color-site);
+        }
+      }
+    }
+  }
+}
